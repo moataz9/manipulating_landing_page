@@ -74,9 +74,13 @@ const observer = new IntersectionObserver(function (entries) {
     if (entry.isIntersecting) {
       // add `active-sect` to intersection section
       entry.target.classList.add('active-sect')
+      // add highlight to active section
+      navbarList.querySelector(`a[href="#${entry.target.id}"]`).classList.add('active')
     } else {
       // remove `active-sect` from other sections
       entry.target.classList.remove('active-sect')
+      // remove highlight to active section
+      navbarList.querySelector(`a[href="#${entry.target.id}"]`).classList.remove('active')
     }
   })
 }, options)
@@ -123,7 +127,7 @@ const checkScrolling = () => {
     window.clearTimeout(isScrolling)
 
     /**
-     * make pageHeaer visible after 500ms
+     * make pageHeader visible after 50ms
      * Set a timeout to run after scrolling ends
      */
     isScrolling = setTimeout(function () {
