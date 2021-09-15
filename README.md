@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+- [Features](#Features)
 - [app_development](#app_development)
 - [Define_Global_Variables](#Define_Global_Variables)
 - [MainFunctions](#MainFunctions)
