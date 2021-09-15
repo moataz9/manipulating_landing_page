@@ -2,20 +2,21 @@
 
 ## Table of Contents
 
-- [Instructions](#instructions)
-- [app parts](#app_parts)
+- [app_development](#app_development)
+- [Define_Global_Variables](#Define_Global_Variables)
+- [MainFunctions](#MainFunctions)
+- [BeginEvents](#BeginEvents)
 
-## Instructions
+## Features
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+> - Nav list was built dynamically as an unordered list.
+> - It is clear which section is being viewed while scrolling through the page with active-sect class.
+> - When clicking an item from the nav_list menu, the link is scrolling smoothly to the appropriate section and will heighlighted as acitve section in the viewport.
+> - When clicking an up button it will take you to top of page
 
-To get started, open `js/app.js` and start building out the app's functionality
+## app_development
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
-
-## app_parts
-
-### Define Global Variables
+### Define_Global_Variables
 
 ```js
 // define element for the app
