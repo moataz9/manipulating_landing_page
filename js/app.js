@@ -92,7 +92,7 @@ const observer = new IntersectionObserver(function (entries) {
 const scrollToSection = () => {
   const hashLinks = document.querySelectorAll('.menu__link')
   hashLinks.forEach(hashLink => {
-    hashLink.onclick = (e) => {
+    hashLink.onclick = e => {
       // get id name from a anchor href attribute
       // const moveToIdName = hashLink.attributes.href.value.slice(1)
       // Or
