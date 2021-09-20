@@ -92,19 +92,16 @@ const observer = new IntersectionObserver(function (entries) {
 const scrollToSection = () => {
   const hashLinks = document.querySelectorAll('.menu__link')
   hashLinks.forEach(hashLink => {
-    hashLink.onclick = function (e) {
+    hashLink.onclick = (e) => {
       // get id name from a anchor href attribute
       // const moveToIdName = hashLink.attributes.href.value.slice(1)
       // Or
       const moveToIdName = e.target.hash.slice(1)
       // get scroll amount from offsettop
       const moveTo = document.getElementById(moveToIdName).offsetTop - 50
-      console.log(moveTo);
-      console.log(e.target);
       // prevent Default link behavior
       e.preventDefault()
       window.scrollTo({
-        // block: 'start',
         top: moveTo,
         behavior: 'smooth',
       })
